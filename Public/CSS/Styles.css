@@ -1,15 +1,15 @@
 body {
     font-family: 'Roboto', sans-serif; 
+    margin: 0;
 }
 
 header {
-     background-color: #EAC926;
-     padding: 30px;
+    background-color: #EAC926;
+    padding: 20px;
+    margin: auto;
+    width: 80%;
 }
 
-main {
-    padding: 20px;
-}
 
 h1 {
     font-size: 24px;
@@ -66,4 +66,36 @@ footer {
 
 footer .fas {
    color: #1a8be7;
+}
+
+
+/* clase 13*/
+
+main {
+    width: 90%;
+    margin: auto;
+    background-color: rgb(224, 222, 222);
+}
+
+section article {
+    margin-bottom: 10px;
+}
+
+.caja-info-producto {
+   border-top:1px solid #ebebeb;
+   padding: 15px;
+   }
+
+.fa-truck {
+    color: rgb(75, 144, 7);
+}
+
+.des {
+    color: rgb(75, 144, 7);
+}
+
+.img {
+    width: 90%;
+    display: block;
+    margin:auto; 
 }
