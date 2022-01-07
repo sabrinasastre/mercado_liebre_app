@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
 }
 
 body {
@@ -13,9 +15,30 @@ header {
     background-color: #EAC926;
     }
 
+.contenedor-logo-busqueda-cuotas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
 .logo {
-    width: 50%;
+    width: 40%;
     padding: 10px; 
+}
+
+.busqueda {
+    width: 50%;
+    height: 4vh;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.compra-en-cuotas {
+    text-align: center;
+    font-size: 12px;
 }
 
 .banner {
@@ -31,10 +54,17 @@ h1 {
 
 .precios {
     font-size: 18px;
+    flex-grow: 0.3;  
 }
 
-.descuentos-descripciones {
+.descuento ,
+.descripcion {
     font-size: 16px;
+}
+
+.precio-descuento {
+    display: flex;
+    width: 100%;
 }
 
 .burger-contenedor {
@@ -47,13 +77,11 @@ h1 {
     color: white;
     border-radius:  10%;
     text-align: center;
-    margin-left: 45%;
+    margin-left: 43%;
     margin-top: 20px; 
     padding: 10px;
 }
-.compra-en-cuotas {
-    text-align: center;
-}
+
 
 ul.iconos-negros li a {
     color: black;
@@ -105,14 +133,16 @@ main {
 .caja-info-producto {
    border-top:1px solid #ebebeb;
    padding: 15px;
+   position: relative; 
    }
 
 .fa-truck {
     color: rgb(75, 144, 7);
 }
 
-.des {
+.descuento {
     color: rgb(75, 144, 7);
+    flex-grow: 0.7;
 }
 
 .img {
@@ -122,16 +152,21 @@ main {
     padding-top: 18px;
 }
 
-.circulo-contenedor-camion {
-    border-radius: 50%;
-    border-color: rgb(75, 144, 7);
-    padding: 10px;
+main section article i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
     border: 1px solid rgb(75, 144, 7);
-    width: 40px;
-    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    position: absolute; 
+    right: 20px;
+    top: -15px;
 }
 
-.descrip {
+.descripcion {
     display: none;
 }
 
@@ -140,16 +175,28 @@ main {
     .burger-contenedor {
         display: none;
     }
-    .descrip ,
+    .descripcion ,
     .caja-site-login-navbar {
      display: block;
-}
+    }
+    .contenedor-ultima-visita ,
+    .contenedor-ofertas {
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .caja-producto {
+        width: 50%; 
+    }
 }
 
 @media (min-width: 769px){
-    .caja-producto {
+ 
+    .caja-producto  {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
-}  
+        width: 23%;
+        justify-content: space-around;
+        margin: 1%; 
+    }  
 }
 
 
