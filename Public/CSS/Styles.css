@@ -175,10 +175,26 @@ main section article i {
     .burger-contenedor {
         display: none;
     }
-    .descripcion ,
-    .caja-site-login-navbar {
-     display: block;
+
+    .descripcion {
+        display: block;
     }
+   
+    .caja-site-login-navbar ,
+    .lista ,
+    .iconos-negros {
+     display: flex;
+    }
+
+    .caja-site-login-navbar{
+      justify-content: space-between;
+    }
+
+    /*.lista ,
+    .iconos-negros {
+        justify-content: space-around;
+    }*/
+
     .contenedor-ultima-visita ,
     .contenedor-ofertas {
         display:flex;
@@ -200,3 +216,62 @@ main section article i {
 }
 
 
+/*------------------ESTILOS DEL LOGIN/REGISTER-----------------*/
+
+.estilos-form {
+    text-align: center;
+   
+}
+
+.cajas-dentro-del-form {
+    margin: 25px;
+    text-align: left;
+}
+
+.cajas-dentro-del-form input {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top: 5px;
+    color: grey;
+}
+
+.cajas-para-escribir {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+
+}
+
+.button-form {
+    width: 100%;
+    padding: 5px;
+    background-color: #0078da;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 3px 3px 3px rgb(73, 72, 72);
+}
+
+/*------------------ESTILOS DEL REGISTER-----------------*/
+
+.label-form {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    
+ }
+
+ .contenedor-intereses {
+     margin-left: 15px;
+     margin-top: 10px;
+ }
+
+ .items {
+   font-family: Arial, Helvetica, sans-serif;
+   color: rgb(88, 87, 87);
+ }
+
+ .items-perfilUsuario {
+     margin-left: 20px;
+ }
+ 

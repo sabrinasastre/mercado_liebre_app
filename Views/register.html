@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/Styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+rel="stylesheet" />
+  
+
+
+
+    <title>register</title>
+</head>
+
+
+
+<body>
+
+    
+    <form class="estilos-form">
+        <div class="cajas-dentro-del-form">
+             <input type="text" name="userName" placeholder="Nombre y apellido" class="cajas-para-escribir">
+             <!-- <span class="feedback"></span> -->
+        </div>
+
+        <div class="cajas-dentro-del-form">
+            <input type="text" name="userName" minlength="8" placeholder="Nombre de usuari@" class="cajas-para-escribir">
+       </div>
+         
+       <div class="cajas-dentro-del-form">
+        <label class="label-form">Fecha de nacimiento</label>
+        <input type="date" name="date" class="cajas-para-escribir">
+       </div>
+
+       <div class="cajas-dentro-del-form">
+        <input type="text" name="domicilio" placeholder="Domicilio" class="cajas-para-escribir">
+       </div>
+
+
+       <div class="cajas-dentro-del-form">
+         <label class="label-form">Perfil del usuario</label>
+         <br>
+            <label class="items-perfilUsuario"><input type="radio" name="PerfilDelUsuario" class="items">&nbsp;&nbsp;Comprador &nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <label class="items-perfilUsuario"><input type="radio" name="PerfilDelUsuario" class="items">&nbsp;&nbsp;Vendedor</label>
+       </div>
+
+
+        <div class="cajas-dentro-del-form">
+            <label class="label-form">Intereses</label>
+            <br>
+            <div class="contenedor-intereses">
+              <label class="items"><input type="checkbox" name="intereses" value="Electro" > &nbsp;&nbsp;Electro </label>
+              <br>
+              <label class="items"><input type="checkbox" name="intereses" value="Moda"> &nbsp;&nbsp;Moda </label>
+              <br>
+              <label class="items"><input type="checkbox" name="intereses" value="Hogar"> &nbsp;&nbsp;Hogar </label>
+              <br>
+              <label class="items"><input type="checkbox" name="intereses" value="Jugueteria"> &nbsp;&nbsp;Juguetería </label>
+              <br>
+              <label class="items"><input type="checkbox" name="intereses" value="VidaSana"> &nbsp;&nbsp;Vida sana </label>
+              <br>
+              <!-- <input type="checkbox" name="intereses" value="Electro" id="electronica">
+                <label class="prueba" for="electronica">Electro </label> -->
+
+
+            </div>
+        </div>
+       
+        
+        <div class="cajas-dentro-del-form">
+            <label class="label-form">Foto de perfil</label>
+            <br>
+            <input type="file" name="imagenPerfil">
+       </div>
+
+
+
+        <div class="cajas-dentro-del-form">
+             <input type="password" name="password" placeholder="Insertá contraseña" class="cajas-para-escribir">
+        </div>
+
+        <div class="cajas-dentro-del-form">
+            <input type="password" name="password" placeholder="Confirmá contraseña" class="cajas-para-escribir">
+       </div>
+
+
+        <div class="cajas-dentro-del-form">
+           <button type="submit" class="button-form">Enviar</button>
+        </div>
+
+        <div class="cajas-dentro-del-form">
+            <button type="reset" class="button-form">Borrar</button>
+         </div>
+  
+  
+      </form>
+    
+</body>
+</html>
