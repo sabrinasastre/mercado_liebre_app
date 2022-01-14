@@ -33,7 +33,6 @@ header {
     height: 4vh;
     border: none;
     border-radius: 5px;
-
 }
 
 .compra-en-cuotas {
@@ -99,7 +98,10 @@ footer {
     text-align: center;
     margin-top: 100px;
     padding: 40px;
+}
 
+.footer-textos  {
+    width: 25%; 
 }
 
 .caja-site-login-navbar {
@@ -114,7 +116,13 @@ footer {
 
 footer .fas {
    color: #1a8be7;
+   font-size: 30px;
 }
+
+footer .fas:hover {
+    color: rgb(204, 185, 12); 
+}
+
 
 
 
@@ -128,6 +136,12 @@ main {
 
 .caja-producto {
     margin-bottom: 10px;
+    background-color: white;
+   
+}
+
+.caja-producto:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
 .caja-info-producto {
@@ -136,9 +150,18 @@ main {
    position: relative; 
    }
 
+
+
 .fa-truck {
     color: rgb(75, 144, 7);
+    transition:  transform 1.5s; 
 }
+
+.fa-truck:hover {
+    transform: rotate(-90deg);
+}
+
+
 
 .descuento {
     color: rgb(75, 144, 7);
@@ -166,9 +189,16 @@ main section article i {
     top: -15px;
 }
 
+
 .descripcion {
     display: none;
 }
+
+main section article:hover .descripcion {
+    display: block;
+}
+
+
 
 @media (min-width: 361px){
 
@@ -176,9 +206,9 @@ main section article i {
         display: none;
     }
 
-    .descripcion {
+    /*.descripcion {
         display: block;
-    }
+    } */
    
     .caja-site-login-navbar ,
     .lista ,
@@ -190,18 +220,15 @@ main section article i {
       justify-content: space-between;
     }
 
-    /*.lista ,
-    .iconos-negros {
-        justify-content: space-around;
-    }*/
-
+   
     .contenedor-ultima-visita ,
     .contenedor-ofertas {
         display:flex;
         flex-wrap: wrap;
     }
     .caja-producto {
-        width: 50%; 
+        width: 45%;
+        margin: 10px;  
     }
 }
 
@@ -212,7 +239,13 @@ main section article i {
         width: 23%;
         justify-content: space-around;
         margin: 1%; 
-    }  
+    }
+    
+    .footer-contenedor {
+        display: flex;  
+        font-size: 14px;
+        
+    }
 }
 
 
@@ -220,37 +253,51 @@ main section article i {
 
 .estilos-form {
     text-align: center;
-   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7vw;
+}
+
+.estilos-form h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight:600;
 }
 
 .cajas-dentro-del-form {
     margin: 25px;
     text-align: left;
+    width: 45vw;
 }
 
 .cajas-dentro-del-form input {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
-    margin-top: 5px;
+    padding: 10px;
     color: grey;
-}
-
-.cajas-para-escribir {
     width: 100%;
-    padding: 5px;
     border: none;
     border-radius: 4px;
-
 }
+
+
 
 .button-form {
     width: 100%;
     padding: 5px;
-    background-color: #0078da;
     color: white;
     border-radius: 4px;
     border: none;
     box-shadow: 3px 3px 3px rgb(73, 72, 72);
+    background-color: #0078da;
+    transition: background-color 0.5s; 
+    
+}
+
+.button-form:hover {
+    background-color: #0022AA;
+     
 }
 
 /*------------------ESTILOS DEL REGISTER-----------------*/
