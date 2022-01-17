@@ -257,6 +257,7 @@ main section article:hover .descripcion {
     flex-direction: column;
     align-items: center;
     margin-top: 7vw;
+    margin-bottom: 7vw;
 }
 
 .estilos-form h1 {
@@ -266,7 +267,7 @@ main section article:hover .descripcion {
 }
 
 .cajas-dentro-del-form {
-    margin: 25px;
+    margin: 10px;
     text-align: left;
     width: 45vw;
 }
@@ -279,14 +280,16 @@ main section article:hover .descripcion {
     width: 100%;
     border: none;
     border-radius: 4px;
+    margin-top: 15px; 
 }
-
-
 
 .button-form {
     width: 100%;
     padding: 5px;
+    margin-top: 10px;
     color: white;
+    height: 35px;
+    font-size: 16px;
     border-radius: 4px;
     border: none;
     box-shadow: 3px 3px 3px rgb(73, 72, 72);
@@ -305,6 +308,7 @@ main section article:hover .descripcion {
 .label-form {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    display: flex;
     
  }
 
@@ -318,7 +322,8 @@ main section article:hover .descripcion {
    color: rgb(88, 87, 87);
  }
 
- .items-perfilUsuario {
-     margin-left: 20px;
+ 
+ .checkbox-register {
+     width: 20% !important;
  }
  
