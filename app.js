@@ -23,6 +23,10 @@ app.get ("/register", (req, res)=>{
     res.sendFile(path.resolve (__dirname, "./views/register.html"))
 });
 
+app.get ("/prueba", (req, res)=>{
+    res.sendFile(path.resolve (__dirname, "./views/register.html"))
+});
+
 app.get("*", (req,res)=>{
     res.send("¡la página que estás buscando, no se encuentra!")
 }); 
