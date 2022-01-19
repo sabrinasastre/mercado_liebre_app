@@ -12,11 +12,11 @@ app.listen (process.env.PORT || 3000, ()=> {
 });
 
 app.get ("/", (req, res)=>{
-    res.sendFile (__dirname + "/Views/home.html")
+    res.sendFile (__dirname + "/Views/home.html") /*esta forma es del Chino*/
 });
 
 app.get ("/login", (req, res)=>{
-    res.sendFile(path.resolve (__dirname, "./Views/login.html"))
+    res.sendFile(path.resolve (__dirname, "./Views/login.html"))  /*esta forma está en el material*/
 });
 
 app.get ("/register", (req, res)=>{
