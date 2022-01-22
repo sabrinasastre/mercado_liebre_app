@@ -18,21 +18,22 @@ header {
 .contenedor-logo-busqueda-cuotas{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     
 }
 
 .logo {
-    width: 40%;
+    width: 20vw;
     padding: 10px; 
 }
 
 .busqueda {
-    width: 50%;
+    width: 20vw;
     height: 4vh;
     border: none;
     border-radius: 5px;
+    padding: 10px;
 }
 
 .compra-en-cuotas {
@@ -116,7 +117,8 @@ footer {
 
 footer .fas {
    color: #1a8be7;
-   font-size: 30px;
+   font-size: 2em;
+   margin-bottom: 10px;
 }
 
 footer .fas:hover {
@@ -200,8 +202,25 @@ main section article:hover .descripcion {
 
 
 
+/* ---------------------MEDIA QUERIES ------------------*/
+
 @media (min-width: 361px){
 
+    .contenedor-ultima-visita ,
+    .contenedor-ofertas {
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .caja-producto {
+        width: 45%;
+        margin: 10px;  
+    }
+}
+
+
+
+@media (min-width: 769px){
+ 
     .burger-contenedor {
         display: none;
     }
@@ -214,26 +233,33 @@ main section article:hover .descripcion {
     .lista ,
     .iconos-negros {
      display: flex;
+ 
     }
+
+    .caja-izquierda,
+    .caja-derecha {
+        width: 45vw;
+        display: flex;
+    }
+
+    .caja-izquierda {
+        justify-content: flex-start;
+        margin-left: 20px;
+    }
+
+    .caja-derecha {
+        justify-content: flex-end;
+        margin-right: 10px;
+    }
+
+    ul.iconos-negros li a,
+    ul.lista li a  {
+        margin-right: 30px; 
+    } 
 
     .caja-site-login-navbar{
       justify-content: space-between;
     }
-
-   
-    .contenedor-ultima-visita ,
-    .contenedor-ofertas {
-        display:flex;
-        flex-wrap: wrap;
-    }
-    .caja-producto {
-        width: 45%;
-        margin: 10px;  
-    }
-}
-
-@media (min-width: 769px){
- 
     .caja-producto  {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
         width: 23%;
