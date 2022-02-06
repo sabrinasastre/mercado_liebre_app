@@ -7,5 +7,5 @@ Basic practice of: </br>
   😉 flexbox </br>
 
 Wanna see it live? check it out :)
-https://git.heroku.com/mercado-liebre-sabrina.git
+https://mercado-liebre-sabrina.herokuapp.com/ 
  
