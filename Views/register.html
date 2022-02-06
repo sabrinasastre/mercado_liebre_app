@@ -14,41 +14,48 @@ rel="stylesheet" />
 </head>
 
 <body>
+<!-- ----------------------HEADER-------------------------- -->
+    <header>
+        <section class="contenedor-logo-busqueda-cuotas">
+            <div class="logo">
+                 <a href="/"><img src="/images/logo-mercado-liebre.svg"></a> 
+            </div>
+    </header>
 
-   <div class="contenedor-form">
-
+    <!-- ----------------------MAIN-------------------------- -->
+ <main class="form-container">
+   
     <form class="estilos-form">
         <h1>¡Registrate!</h1>
+
+        <!-- --------------name----------------- -->
         <div class="cajas-dentro-del-form">
              <input type="text" name="userName" placeholder="Nombre y apellido" >
              <!-- <span class="feedback"></span> -->
         </div>
-
+        <!-- --------------user name----------------- -->
         <div class="cajas-dentro-del-form">
             <input type="text" name="userName" minlength="8" placeholder="Nombre de usuari@">
        </div>
-         
-       <div class="cajas-dentro-del-form">
-        <label class="label-form">Fecha de nacimiento</label>
-        <input type="date" name="date" >
+        <!-- --------------fecha nacimiento----------------- -->
+       <div class="cajas-dentro-del-form" class="nacimiento">
+        <label class="label-form">Fecha de nacimiento</label> 
+        <input type="date" name="date">
        </div>
-
+        <!-- --------------domicilio----------------- -->
        <div class="cajas-dentro-del-form">
         <input type="text" name="domicilio" placeholder="Domicilio">
        </div>
-
-
+        <!-- --------------comprador/vendedor checkbox----------------- -->
        <div class="cajas-dentro-del-form">
          <label class="label-form">Perfil del usuario</label>
          <br>
             <label class="items"><input type="radio" name="PerfilDelUsuario" class="checkbox-register">Comprador</label>
             <label class="items"><input type="radio" name="PerfilDelUsuario" class="checkbox-register">Vendedor</label>
        </div>
-
-
+        <!-- --------------intereses checkbox----------------- -->
         <div class="cajas-dentro-del-form">
             <label class="label-form">Intereses</label>
-            <br>
             <div class="contenedor-intereses">
               <label class="items"><input type="checkbox" name="intereses" value="Electro" class="checkbox-register">Electro</label>
               <br>
@@ -63,28 +70,25 @@ rel="stylesheet" />
               <!-- <input type="checkbox" name="intereses" value="Electro" id="electronica">
                 <label class="prueba" for="electronica">Electro </label> -->
 
-
             </div>
         </div>
        
-        
+        <!-- --------------foto----------------- -->
         <div class="cajas-dentro-del-form">
             <label class="label-form">Foto de perfil</label>
-            <br>
             <input type="file" name="imagenPerfil">
        </div>
 
-
-
+        <!-- --------------contraseña----------------- -->
         <div class="cajas-dentro-del-form">
              <input type="password" name="password" placeholder="Insertá contraseña" class="cajas-para-escribir">
         </div>
-
+        <!-- --------------confirmar contraseña----------------- -->
         <div class="cajas-dentro-del-form">
             <input type="password" name="password" placeholder="Confirmá contraseña" class="cajas-para-escribir">
        </div>
 
-
+        <!-- --------------botones----------------- -->
         <div class="cajas-dentro-del-form">
            <button type="submit" class="button-form">Enviar</button>
         </div>
@@ -95,6 +99,14 @@ rel="stylesheet" />
   
   
       </form>
-    </div>
+    
+ </main>
+
+     <!-- ----------------------FOOTER-------------------------- -->
+<footer>
+        <section class="copyright">
+            <strong >Copyright © 1999-2020 MercadoLiebre S.R.L.</strong>  
+       </section>
+  </footer>
 </body>
 </html>

@@ -99,10 +99,12 @@ footer {
     text-align: center;
     margin-top: 100px;
     padding: 40px;
+    background-color: #f5f4f4;
 }
 
-.footer-textos  {
-    width: 25%; 
+footer p {
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
 .caja-site-login-navbar {
@@ -277,25 +279,33 @@ main section article:hover .descripcion {
 
 /*------------------ESTILOS DEL LOGIN/REGISTER-----------------*/
 
+.form-container {
+    display: flex;
+    justify-content: center;
+}
 .estilos-form {
-    text-align: center;
+    /*text-align: center;*/
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 7vw;
-    margin-bottom: 7vw;
+    margin-bottom: 4vw;
+    padding: 30px;
+    padding-bottom: 50px;
+    max-width: 40%;
+    background-color: #f6f6f6;
 }
 
 .estilos-form h1 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     font-weight:600;
+    color: rgb(70, 66, 66);
 }
 
 .cajas-dentro-del-form {
     margin: 10px;
-    text-align: left;
-    width: 45vw;
+ 
 }
 
 .cajas-dentro-del-form input {
@@ -303,18 +313,22 @@ main section article:hover .descripcion {
     font-size: 14px;
     padding: 10px;
     color: grey;
-    width: 100%;
-    border: none;
+    width: 25vw;
+    border: rgb(255 255 255) solid 1px;
     border-radius: 4px;
-    margin-top: 15px; 
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-shadow: 1px 2px 3px 2px #0000002e;
 }
 
 .button-form {
-    width: 100%;
+    width: 25vw;
     padding: 5px;
     margin-top: 10px;
     color: white;
-    height: 35px;
+    height: 40px;
     font-size: 16px;
     border-radius: 4px;
     border: none;
@@ -334,9 +348,13 @@ main section article:hover .descripcion {
 .label-form {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    padding-left: 20px;
+    font-size: 15px;
+    color: rgb(88, 85, 85);
+    width: 29vw;
     display: flex;
-    
  }
+
 
  .contenedor-intereses {
      margin-left: 15px;
@@ -351,5 +369,7 @@ main section article:hover .descripcion {
  
  .checkbox-register {
      width: 20% !important;
- }
+     box-shadow: 1px 2px 3px 2px #ffffff00 !important;
+    };
+
  
