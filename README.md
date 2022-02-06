@@ -6,6 +6,6 @@ Basic practice of: </br>
   😉 home page, login and register (only with html and css) </br>
   😉 flexbox </br>
 
-Wanna see it live? check it out :)
+Wanna see it live? check it out :)  </br>
 https://mercado-liebre-sabrina.herokuapp.com/ 
  
